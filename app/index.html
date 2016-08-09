@@ -10,7 +10,9 @@
     {{content-for "head"}}
 
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/bootstrap.css">
     <link rel="stylesheet" href="{{rootURL}}assets/instacritic.css">
+    <script src="https://use.fontawesome.com/f23e9a05bf.js"></script>
 
     {{content-for "head-footer"}}
   </head>
@@ -18,7 +20,21 @@
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/bootstrap.js"></script>
     <script src="{{rootURL}}assets/instacritic.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBtqjwJ0U3Y-_bp74HDAeb4mnEsf3oVctw",
+    authDomain: "instacritic-7db28.firebaseapp.com",
+    databaseURL: "https://instacritic-7db28.firebaseio.com",
+    storageBucket: "",
+  };
+  firebase.initializeApp(config);
+</script>
+    
 
     {{content-for "body-footer"}}
   </body>
